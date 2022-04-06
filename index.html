@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href=stylesheet.css type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');</style>
+</head>
+<body>
+<div class="center">
+    <h1>HL Web Design Wedding Invitation Planner<br><br></h1>
+    <section id="forminput">
+        <h3>Input your details</h3>
+        <hr class="solid"></hr>
+        <form>
+            <label for="person1in">Person One First Name:</label><br>
+            <input type="text" id="person1in" name="person1in" value="John" onkeyup="livetyping1();" onclick="this.value='';" ><br><br>
+            <label for="person2in">Person Two First Name:</label><br>
+            <input type="text" id="person2in" name="person2in" value="Mary" onkeyup="livetyping2();" onclick="this.value='';" ><br><br>
+            <label for="lastnamein">Last Name of Couple:</label><br>
+            <input type="text" id="lastnamein" name="lastnamein" value="Smith" onkeyup="livetyping3();" onclick="this.value='';" ><br><br>
+            <label for="weddingdatein">Wedding Date</label><br>
+            <input type="date" id="weddingdatein" name="weddingdatein" value="2021-01-01" onkeyup="livetyping4();" onclick="this.value='';" ><br><br>
+            <label for="weddingtimein">Wedding Time</label><br>
+            <input type="time" id="weddingtimein" name="weddingtimein" value="19:00" onkeyup="livetyping5();" onclick="this.value='';" ><br><br>
+            <label for="venuein">Name of Venue</label><br>
+            <input type="text" id="venuein" name="venuein" value="Mosman Function Center" onkeyup="livetyping6();"  onclick="this.value='';" ><br><br>
+            <button type="button" onclick="changeStyle1()">Style 1</button>
+            <button type="button" onclick="changeStyle2()">Style 2</button>
+            <button type="button" onclick="changeStyle3()">Style 3</button>
+        </form>  
+    </section>
+    <section id="previewoutput">
+        <h2 style= "text-align:center">Wedding Invitation</h2>
+        <br><br>
+        <p style="text-align:center"><b id="person1out">John</b><b> and </b><b id="person2out">Mary</b> <b id="lastnameout">Smith</b></p>
+        <br><br>
+        <p style= "text-align:center" id="weddingdateout">dd/mm/yyyy</p>
+        
+        <p style= "text-align:center" id="weddingtimeout"> --:-- --</p>
+        <br><br>
+        <p style= "text-align:center" id="venueout">Mosman Function Center</p>
+    </section>
+    </div>
+    <div class="centerfooter">
+    <h3 style="text-align:center;">© HL Web Design 2022</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
